@@ -1,7 +1,12 @@
 
 # aider
 .aider.tags.cache.v3
-.aider.chat.history
+.aider.chat.history.md
 
 # node modules
 node_modules
+
+# next
+.next
+.aider*
+.env
