@@ -1,0 +1,7 @@
+
+# aider
+.aider.tags.cache.v3
+.aider.chat.history
+
+# node modules
+node_modules
