@@ -1,42 +1,45 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import Twitter from "../../../public/twitter.svg";
+import TwitterLight from "../../../public/twitter-light.svg";
+import TwitterDark from "../../../public/twitter-dark.svg";
 
 import { Github, Instagram, Linkedin } from "lucide-react";
+import { useTheme } from "../utils/theme-context";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const { theme } = useTheme();
 
   const socialLinks = [
     {
       name: "GitHub",
       url: "https://github.com/corbinlazarone",
-      icon: (
-        <Github className="h-6 w-6" /> 
-      ),
+      icon: <Github className="h-6 w-6" />,
     },
     {
       name: "LinkedIn",
       url: "https://www.linkedin.com/in/corbin-lazarone-58647923b/",
-      icon: (
-        <Linkedin className="h-6 w-6" /> 
-      ),
+      icon: <Linkedin className="h-6 w-6" />,
     },
     {
       name: "Twitter",
       url: "https://x.com/corbinjlaz",
       icon: (
-        <Image src={Twitter.src} alt="Twitter" width={24} height={24} />
+        <Image
+          src={theme === "dark" ? TwitterLight.src : TwitterDark.src}
+          alt="Twitter"
+          width={24}
+          height={24}
+        />
       ),
     },
     {
       name: "Instagram",
       url: "https://www.instagram.com/corbinlazarone/",
-      icon: (
-        <Instagram className="h-6 w-6" />
-      )
-    }
+      icon: <Instagram className="h-6 w-6" />,
+    },
   ];
 
   return (

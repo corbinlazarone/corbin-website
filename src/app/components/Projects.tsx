@@ -9,7 +9,6 @@ export default function Projects() {
       github: "https://github.com/yourusername/project1",
       demo: "https://project1demo.com",
     },
-    // Add more projects
   ];
 
   return (
