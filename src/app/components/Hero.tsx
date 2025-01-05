@@ -40,7 +40,7 @@ export default function Hero() {
               Passionate about building impactful software solutions and
               currently exploring opportunities in software development.
             </p>
-            <div className="space-y-4 md:space-y-0 md:space-x-4 flex flex-col md:flex-row justify-center">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-4">
               <button
                 onClick={() => scrollToSection("contact")}
                 className="px-8 py-3 bg-purple-800 text-white rounded-lg hover:bg-purple-900 transition-colors"
