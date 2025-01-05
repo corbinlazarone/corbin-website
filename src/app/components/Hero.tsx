@@ -1,10 +1,8 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { useTheme } from "../utils/theme-context";
 
 export default function Hero() {
-  const { theme } = useTheme();
 
   const scrollToSection = (sectionId: string) => {
     const element: HTMLElement = document.getElementById(sectionId);
@@ -29,7 +27,7 @@ export default function Hero() {
           <div className="space-y-8">
             <div className="space-y-2">
               <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
-                Hi, I'm Corbin Lazarone
+                Hi, I&apos;m Corbin Lazarone
               </h1>
               <p className="text-xl text-purple-800 dark:text-purple-400">
                 Computer Science Student & Software Developer

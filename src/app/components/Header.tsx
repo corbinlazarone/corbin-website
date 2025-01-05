@@ -33,6 +33,29 @@ export default function Header() {
             Corbin Lazarone
           </h1>
 
+          {/* Mobile menu button - Moved inside the flex container */}
+          <button
+            className="md:hidden text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            <svg
+              className="w-6 h-6 transition-transform duration-200 ease-in-out"
+              style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0)" }}
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              {isMenuOpen ? (
+                <path d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+
           {/* Desktop menu */}
           <div className="hidden md:flex space-x-6">
             <button
@@ -85,33 +108,10 @@ export default function Header() {
           </div>
         </div>
 
-        {/* Mobile menu button */}
-        <button
-          className="md:hidden text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          <svg
-            className="w-6 h-6 transition-transform duration-200 ease-in-out"
-            style={{ transform: isMenuOpen ? "rotate(180deg)" : "rotate(0)" }}
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            {isMenuOpen ? (
-              <path d="M6 18L18 6M6 6l12 12" />
-            ) : (
-              <path d="M4 6h16M4 12h16M4 18h16" />
-            )}
-          </svg>
-        </button>
-
         {/* Mobile Menu */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isMenuOpen ? "max-h-[200px] opacity-100" : "max-h-0 opacity-0"
+            isMenuOpen ? "max-h-[240px] opacity-100" : "max-h-0 opacity-0"
           }`}
         >
           <div className="pt-2 pb-3 space-y-1">
@@ -139,12 +139,13 @@ export default function Header() {
             >
               Contact
             </button>
+
             {/* Mobile Theme Toggle */}
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={toggleTheme}
-              className="flex items-center w-full px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white transition-colors duration-200"
+              className="flex items-center w-full px-4 py-2 text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white transition-colors duration-200 gap-3"
             >
               <span className="mr-3">
                 <AnimatePresence mode="wait" initial={false}>

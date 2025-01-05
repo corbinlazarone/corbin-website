@@ -9,4 +9,4 @@ node_modules
 # next
 .next
 .aider*
-.env
+.env.local
