@@ -1,42 +1,41 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
+import { useTheme } from "../utils/theme-context";
 
 export default function Hero() {
+  const { theme } = useTheme();
+
   const scrollToSection = (sectionId: string) => {
     const element: HTMLElement = document.getElementById(sectionId);
 
     if (element) {
-        const headerOffset = 80;
-        const elementPosition = element.getBoundingClientRect().top;
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-  
-        window.scrollTo({
-          top: offsetPosition,
-          behavior: 'smooth'
-        });
+      const headerOffset = 80;
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
 
   return (
-    <section
-      id="about"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50"
-    >
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="container mx-auto px-6 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Text content */}
           <div className="space-y-8">
             <div className="space-y-2">
-              <h1 className="text-5xl font-bold text-gray-900">
+              <h1 className="text-5xl font-bold text-gray-900 dark:text-white">
                 Hi, I'm Corbin Lazarone
               </h1>
-              <p className="text-xl text-purple-800">
+              <p className="text-xl text-purple-800 dark:text-purple-400">
                 Computer Science Student & Software Developer
               </p>
             </div>
-            <p className="text-gray-600 text-lg leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
               Passionate about building impactful software solutions and
               currently exploring opportunities in software development.
             </p>
