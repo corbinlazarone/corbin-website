@@ -1,9 +1,16 @@
-import React from 'react';
+import React from "react";
 
 export default function Projects() {
   const projects = [
     {
-      title: "Project 1",
+      title: "Portfolio Website",
+      description: "The current website you are on!",
+      technologies: ["Next.js", "Tailwind"],
+      github: "",
+      demo: "",
+    },
+    {
+      title: "Syllabus to Calendar Automation Tool for students.",
       description: "Description of your project",
       technologies: ["React", "Node.js", "MongoDB"],
       github: "https://github.com/yourusername/project1",
@@ -14,7 +21,9 @@ export default function Projects() {
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-900">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">Projects</h2>
+        <h2 className="text-3xl font-bold mb-12 text-center text-gray-900 dark:text-white">
+          Projects
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
             <div
@@ -22,8 +31,12 @@ export default function Projects() {
               className="bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 dark:border-gray-700"
             >
               <div className="space-y-4">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">{project.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">{project.description}</p>
+                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                  {project.title}
+                </h3>
+                <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  {project.description}
+                </p>
                 <div className="flex flex-wrap gap-2">
                   {project.technologies.map((tech, i) => (
                     <span

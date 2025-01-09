@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 
 export default function Hero() {
-
   const scrollToSection = (sectionId: string) => {
     const element: HTMLElement = document.getElementById(sectionId);
 
@@ -35,8 +34,9 @@ export default function Hero() {
             </div>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
               Passionate about building impactful software solutions and
-              currently exploring opportunities in software development.
+              bringing creative ideas to life through code.
             </p>
+
             <div className="flex flex-col md:flex-row gap-4 md:gap-4">
               <button
                 onClick={() => scrollToSection("contact")}
