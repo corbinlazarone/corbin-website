@@ -9,21 +9,24 @@ export default function Experience() {
       company: "BBP",
       period: "Dec 2022 - May 2024",
       website: "https://bbpsales.com/",
-      description: "Worked with other developers to build systems for tracking sensor data and revamped an existing business management software, both using Ignition. The update made everything run faster when loading orders and production info, and made it easier for people to use and get their work done.",
+      description:
+        "Worked with other developers to build systems for tracking sensor data and revamped an existing business management software, both using Ignition. The update made everything run faster when loading orders and production info, and made it easier for people to use and get their work done.",
     },
     {
       title: "Software Engineering Intern",
       company: "Chevron",
       period: "May 2024 - Aug 2024",
       website: "https://www.chevron.com/",
-      description: "Collaborated with a team of developers to build and deploy .NET 8 APIs, adding a security layer for business users and in-house Azure function apps.",
+      description:
+        "Collaborated with a team of developers to build and deploy .NET 8 APIs, adding a security layer for business users and in-house Azure function apps.",
     },
     {
       title: "Full Stack Development Intern",
       company: "BBP",
       period: "Aug 2024 - Present",
       website: "https://bbpsales.com/",
-      description: "N/A",
+      description:
+        "Developed and deployed scalable web applications using .NET 8 and Python backends with React and Vite frontends. Designed and implemented RESTful APIs following best practices and modern architectural patterns. Collaborated with as team of developers to optimize application performance and maintain code quality through comprehensive testing and documentation.",
     },
   ];
 
@@ -60,9 +63,11 @@ export default function Experience() {
                       <h3 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white">
                         {exp.title}
                       </h3>
-                      <div className="inline-flex items-center gap-1.5 text-purple-800 dark:text-purple-400 
+                      <div
+                        className="inline-flex items-center gap-1.5 text-purple-800 dark:text-purple-400 
                         font-medium group-hover:text-purple-900 dark:group-hover:text-purple-300 
-                        transition-colors">
+                        transition-colors"
+                      >
                         {exp.company}
                         <ExternalLink className="w-4 h-4" />
                       </div>

@@ -7,15 +7,22 @@ export default function Projects() {
       description: "The current website you are on!",
       technologies: ["Next.js", "Tailwind"],
       github: "",
-      demo: "",
+      demo: "https://corbinlazarone.com",
     },
     {
-      title: "Syllabus to Calendar Automation Tool for students.",
-      description: "Description of your project",
-      technologies: ["React", "Node.js", "MongoDB"],
-      github: "https://github.com/yourusername/project1",
-      demo: "https://project1demo.com",
+      title: "Todue",
+      description: "Syllabus to Calendar Automation Tool for students.",
+      technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
+      github: "",
+      demo: "https://trytodue.com",
     },
+    {
+      title: "Watchwise",
+      description: "View your most liked YouTube channels and videos.",
+      technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
+      github: "",
+      demo: "https://trywatchwise.com"
+    }
   ];
 
   return (
