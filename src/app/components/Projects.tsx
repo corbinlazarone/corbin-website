@@ -6,7 +6,7 @@ export default function Projects() {
       title: "Portfolio Website",
       description: "The current website you are on!",
       technologies: ["Next.js", "Tailwind"],
-      github: "",
+      github: "https://github.com/corbinlazarone/corbin-website",
       demo: "https://corbinlazarone.com",
     },
     {
@@ -20,7 +20,7 @@ export default function Projects() {
       title: "Watchwise",
       description: "View your most liked YouTube channels and videos.",
       technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
-      github: "",
+      github: "https://github.com/corbinlazarone/watchwise-public",
       demo: "https://trywatchwise.com"
     }
   ];
