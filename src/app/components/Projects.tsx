@@ -16,6 +16,13 @@ export default function Projects() {
       github: "",
       demo: "https://trytodue.com",
     },
+    {
+      title: "Watchwise",
+      description: "View your most liked YouTube channels and videos.",
+      technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
+      github: "https://github.com/corbinlazarone/watchwise-public",
+      demo: "https://trywatchwise.com"
+    }
   ];
 
   return (
