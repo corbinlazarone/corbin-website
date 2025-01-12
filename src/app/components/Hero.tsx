@@ -22,37 +22,6 @@ export default function Hero() {
   return (
     <section id="about" className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
 
-      {/* Glowing flowing lines */}
-      <div className="absolute inset-0 overflow-hidden z-0">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              transform: `rotate(${Math.random() * 360}deg)`,
-            }}
-          >
-            <div
-              className={`
-                h-[200px] w-[2px]
-                bg-gradient-to-t from-transparent via-purple-500 to-transparent
-                animate-glow-flow
-                blur-[2px]
-                relative
-              `}
-              style={{
-                animationDelay: `${i * -2}s`,
-                opacity: 0.4,
-              }}
-            >
-              <div className="absolute inset-0 bg-purple-400 blur-xl opacity-20" />
-            </div>
-          </div>
-        ))}
-      </div>
-
       {/* Subtle particle effect */}
       <div className="absolute inset-0 z-0">
         {[...Array(20)].map((_, i) => (
