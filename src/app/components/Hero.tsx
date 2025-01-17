@@ -76,7 +76,7 @@ export default function Hero() {
                 Hi, I&apos;m Corbin Lazarone
               </h1>
               <p className="text-xl text-purple-800 dark:text-purple-400">
-                Computer Science Student & Software Developer
+                Software Engineer
               </p>
             </div>
             <p className="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
