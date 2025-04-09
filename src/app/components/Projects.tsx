@@ -21,8 +21,8 @@ export default function Projects() {
       description: "View your most liked YouTube channels and videos.",
       technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
       github: "https://github.com/corbinlazarone/watchwise-public",
-      demo: "https://trywatchwise.com"
-    }
+      demo: null,
+    },
   ];
 
   return (
@@ -55,22 +55,26 @@ export default function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-4 pt-4">
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-800 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 font-medium"
-                  >
-                    GitHub →
-                  </a>
-                  <a
-                    href={project.demo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-purple-800 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 font-medium"
-                  >
-                    Live Demo →
-                  </a>
+                  {project.github ? (
+                    <a
+                      href={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-800 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 font-medium"
+                    >
+                      GitHub →
+                    </a>
+                  ) : null}
+                  {project.demo ? (
+                    <a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-purple-800 dark:text-purple-400 hover:text-purple-900 dark:hover:text-purple-300 font-medium"
+                    >
+                      Live Demo →
+                    </a>
+                  ) : null}
                 </div>
               </div>
             </div>
