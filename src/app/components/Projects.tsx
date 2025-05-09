@@ -13,7 +13,7 @@ export default function Projects() {
       title: "Todue",
       description: "Syllabus to Calendar Automation Tool for students.",
       technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
-      github: "",
+      github: "https://github.com/corbinlazarone/Todue",
       demo: "https://trytodue.com",
     },
     {
