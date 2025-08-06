@@ -10,13 +10,6 @@ export default function Projects() {
       demo: "https://corbinlazarone.com",
     },
     {
-      title: "Todue",
-      description: "Syllabus to Calendar Automation Tool for students.",
-      technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
-      github: "https://github.com/corbinlazarone/Todue",
-      demo: "https://trytodue.com",
-    },
-    {
       title: "Watchwise",
       description: "View your most liked YouTube channels and videos.",
       technologies: ["Next.js", "Tailwind", "Express", "Supabase"],
